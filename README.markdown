@@ -4,7 +4,7 @@ HTML + CSS + NCAA bracket = Geek sports
 
 ###Rundown
 
-A [Less](http://lesscss.org/) "http://lesscss.org/" file is used for style but is definitely not required. 
+A [Less](http://lesscss.org/ "http://lesscss.org/" ) file is used for style but is definitely not required. 
 
 Just add the code below in your teams specified slot:
     <span class="seed"><!-- Add Seed # --></span> <!-- School Name --> <em class="score"><!-- Total Score --></em>
