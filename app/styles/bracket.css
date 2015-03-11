@@ -1,22 +1,20 @@
 body.bracket {
   margin: 0.61538em;
-  background-color: #252A37;
-  color: rgba(255, 255, 255, 0.65);
+  background-color: #fff;
+  color: #444;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px; }
   body.bracket #content-wrapper {
     width: 74.61538em;
-    padding-top: 10px;
+    padding-top: 0.76923em;
     margin: 0 auto; }
-  body.bracket #content-wrapper .content {
-    width: 73.07692em;
-    padding: 15px 10px; }
 
-hr.section_hr, div.section_sidebar {
+hr.section_hr,
+div.section_sidebar {
   display: none; }
 
 body h4 {
-  color: #42454c;
+  color: rgba(65, 65, 65, 0.3);
   text-transform: uppercase; }
 
 table.gridtable {
@@ -24,23 +22,25 @@ table.gridtable {
   color: #fff;
   border-width: 1px;
   border-color: #47D17E;
-  border-collapse: collapse;
-  margin-bottom: 21px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 3px;
+  margin-bottom: 1.90909em;
   overflow: hidden; }
   table.gridtable th {
-    background-color: #47D17E;
-    color: #175d33;
+    background-color: #424242;
+    color: rgba(255, 255, 255, 0.8);
     border-width: 0;
-    padding: 20px 8px;
+    padding: 1.81818em 0.72727em;
     width: 69.4px;
-    border: 1px solid #47D17E; }
+    border: 1px solid #424242; }
   table.gridtable td {
-    color: rgba(255, 255, 255, 0.5);
+    color: #999;
     border-width: 0px;
     padding: 16px 8px;
     border-style: solid;
-    border-color: #1f232e;
-    background-color: #1f232e;
+    border-color: #F0F0F0;
+    background-color: #F0F0F0;
     text-align: center; }
     table.gridtable td.title {
       background: #ccc;
@@ -50,74 +50,59 @@ table.gridtable {
   margin-top: 15px;
   height: 1000px;
   position: relative; }
-
-#bracket .round {
-  position: absolute;
-  top: 0;
-  width: 950px; }
-
-#bracket .round strong, #bracket .round strong span.seed, #bracket .round strong span.score {
-  color: #1d79df; }
-
-#bracket #round2 {
-  left: 115px;
-  width: 720px; }
-
-#bracket #round3 {
-  left: 230px;
-  width: 490px; }
-
-#bracket #round4 {
-  left: 345px;
-  width: 260px; }
-
-#bracket #round5 {
-  left: 280px;
-  width: 380px; }
-
-#bracket #round6 {
-  left: 395px;
-  width: 150px; }
-
-#bracket .round .region1 .match, #bracket .round .region2 .match {
-  left: 0px; }
-
-#bracket .round .region3 .match, #bracket .round .region4 .match {
-  right: 0px; }
-
-#bracket .match {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 0;
-  width: 114px;
-  position: absolute;
-  font-size: 12px; }
-
-#bracket #round1 .match {
-  height: 40px; }
-
-#bracket #round1 .m1 {
-  top: 0; }
-
-#bracket #round1 .m2 {
-  top: 50px; }
-
-#bracket #round1 .m3 {
-  top: 100px; }
-
-#bracket #round1 .m4 {
-  top: 150px; }
-
-#bracket #round1 .m5 {
-  top: 200px; }
-
-#bracket #round1 .m6 {
-  top: 250px; }
-
-#bracket #round1 .m7 {
-  top: 300px; }
-
-#bracket #round1 .m8 {
-  top: 350px; }
+  #bracket .round {
+    position: absolute;
+    top: 0;
+    width: 950px; }
+  #bracket .round strong,
+  #bracket .round strong span.seed,
+  #bracket .round strong span.score {
+    color: #1d79df; }
+  #bracket #round2 {
+    left: 115px;
+    width: 720px; }
+  #bracket #round3 {
+    left: 230px;
+    width: 490px; }
+  #bracket #round4 {
+    left: 345px;
+    width: 260px; }
+  #bracket #round5 {
+    left: 280px;
+    width: 380px; }
+  #bracket #round6 {
+    left: 395px;
+    width: 150px; }
+  #bracket .round .region1 .match,
+  #bracket .round .region2 .match {
+    left: 0; }
+  #bracket .round .region3 .match,
+  #bracket .round .region4 .match {
+    right: 0; }
+  #bracket .match {
+    border: 1px solid rgba(51, 51, 51, 0.6);
+    padding: 0;
+    width: 114px;
+    position: absolute;
+    font-size: 12px; }
+  #bracket #round1 .match {
+    height: 40px; }
+  #bracket #round1 .m1 {
+    top: 0; }
+  #bracket #round1 .m2 {
+    top: 50px; }
+  #bracket #round1 .m3 {
+    top: 100px; }
+  #bracket #round1 .m4 {
+    top: 150px; }
+  #bracket #round1 .m5 {
+    top: 200px; }
+  #bracket #round1 .m6 {
+    top: 250px; }
+  #bracket #round1 .m7 {
+    top: 300px; }
+  #bracket #round1 .m8 {
+    top: 350px; }
 
 #bracket #round1 .region2 .m1, #bracket #round1 .region4 .m1 {
   top: 550px; }
@@ -222,36 +207,34 @@ table.gridtable {
   line-height: 25px;
   padding: 0 10px 0 6px; }
 
-#bracket #round6 .selected {
-  font-size: 16px;
-  background: #D7E8F0; }
-
 #bracket #round6 .slot1 {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.6);
   top: 22px; }
 
 #bracket #round6 .slot2 {
   top: 48px; }
 
-#bracket #round6 strong, #bracket #round6 strong span.seed, #bracket #round6 strong span.score {
+#bracket #round6 strong,
+#bracket #round6 strong span.seed,
+#bracket #round6 strong span.score {
   color: #1d79df; }
-
-#bracket h3, #bracket h4 {
-  display: none; }
 
 #bracket #round1 h4 {
   display: block;
   position: absolute;
   left: 170px;
-  top: 165px;
-  width: 150px; }
+  top: 168px;
+  width: 150px;
+  text-align: center; }
 
-#bracket #round1 .region3 h4, #bracket #round1 .region4 h4 {
+#bracket #round1 .region3 h4,
+#bracket #round1 .region4 h4 {
   left: auto;
   right: 170px;
-  text-align: right; }
+  text-align: center; }
 
-#bracket #round1 .region2 h4, #bracket #round1 .region4 h4 {
+#bracket #round1 .region2 h4,
+#bracket #round1 .region4 h4 {
   top: 715px; }
 
 #bracket .match .slot {
@@ -273,26 +256,25 @@ table.gridtable {
   font-style: normal; }
 
 #bracket .match .seed {
-  color: #4e515a;
+  color: #a7a7a7;
   font-size: 10px; }
 
-#bracket .match .winner, #bracket .match .winner em {
+#bracket .match .winner,
+#bracket .match .winner em {
   font-weight: bold; }
 
-#bracket .region1 .match, #bracket .region2 .match {
+#bracket .region1 .match,
+#bracket .region2 .match {
   border-left: 0px; }
 
-#bracket .region3 .match, #bracket .region4 .match {
+#bracket .region3 .match,
+#bracket .region4 .match {
   border-right: 0px; }
 
-#bracket .final_pick {
-  font-size: 16px;
-  background: #fff; }
-
-#bracket .loser, #bracket strike {
+#bracket .loser,
+#bracket strike {
   font-weight: normal;
   color: #4e515a;
   text-decoration: line-through; }
 
-#bracket strike a {
-  color: #666; }
+/*# sourceMappingURL=bracket.css.map */

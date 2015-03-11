@@ -6,6 +6,7 @@ $winner: lighten(#1A6DC8, 5);
 $loser:  lighten(#42454c, 5);
 $champ:  lighten(#1A6DC8, 5);
 $round:  #B3D4EF;
+$bracket: rgba(#333, 0.6);
 
 $font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -17,18 +18,14 @@ $browser-context: 13;
 
 body.bracket {
   margin: em(8);
-  background-color: #252A37;
-  color: rgba(#fff, 0.65);
+  background-color: #fff;
+  color: #444;
   font-family: $font;
   font-size: 13px;
   #content-wrapper {
     width: em(970);
-    padding-top: 10px;
+    padding-top: em(10);
     margin: 0 auto;
-  }
-  #content-wrapper .content {
-    width: em(950);
-    padding: 15px 10px;
   }
 }
 
@@ -38,7 +35,7 @@ div.section_sidebar {
 }
 
 body h4 {
-  color: darken(#5A5E67, 10);
+  color: rgba(#414141, 0.3);
   text-transform: uppercase;
 }
 
@@ -47,24 +44,26 @@ table.gridtable {
   color: #fff;
   border-width: 1px;
   border-color: #47D17E;
-  border-collapse: collapse;
-  margin-bottom: 21px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 3px;
+  margin-bottom: em(21, 11);
   overflow: hidden;
   th {
-    background-color: #47D17E;
-    color: darken(#47D17E, 32);
+    background-color: #424242;
+    color: rgba(#fff, 0.8);
     border-width: 0;
-    padding: 20px 8px;
+    padding: em(20, 11) em(8, 11);
     width: 69.4px;
-    border: 1px solid #47D17E;
+    border: 1px solid #424242;
   }
   td {
-    color: rgba(#fff, 0.5);
+    color: #999;
     border-width: 0px;
     padding: 16px 8px;
     border-style: solid;
-    border-color: darken(#252A37, 3);
-    background-color: darken(#252A37, 3);
+    border-color: #F0F0F0;
+    background-color: #F0F0F0;
     text-align: center;
     &.title {
       background: #ccc;
@@ -73,41 +72,47 @@ table.gridtable {
   }
 }
 
-#bracket { margin-top: 15px; height: 1000px; position: relative; }
-#bracket .round { position: absolute; top: 0; width: 950px; }
-#bracket .round strong,
-#bracket .round strong span.seed,
-#bracket .round strong span.score { color: $winner; }
+#bracket {
+  margin-top: 15px;
+  height: 1000px;
+  position: relative;
 
-#bracket #round2 { left: 115px; width: 720px; }
-#bracket #round3 { left: 230px; width: 490px; }
-#bracket #round4 { left: 345px; width: 260px; }
-#bracket #round5 { left: 280px; width: 380px; }
-#bracket #round6 { left: 395px; width: 150px; }
+  .round { position: absolute; top: 0; width: 950px; }
+  .round strong,
+  .round strong span.seed,
+  .round strong span.score { color: $winner; }
 
-#bracket .round .region1 .match,
-#bracket .round .region2 .match { left: 0px; }
-#bracket .round .region3 .match,
-#bracket .round .region4 .match { right: 0px; }
+  #round2 { left: 115px; width: 720px; }
+  #round3 { left: 230px; width: 490px; }
+  #round4 { left: 345px; width: 260px; }
+  #round5 { left: 280px; width: 380px; }
+  #round6 { left: 395px; width: 150px; }
 
-#bracket .match {
-  border: 1px solid rgba(#fff, 0.25);
-  padding: 0;
-  width: 114px;
-  position: absolute;
-  font-size: 12px;
+  .round .region1 .match,
+  .round .region2 .match { left: 0; }
+  .round .region3 .match,
+  .round .region4 .match { right: 0; }
+
+  .match {
+    border: 1px solid $bracket;
+    padding: 0;
+    width: 114px;
+    position: absolute;
+    font-size: 12px;
+  }
+
+  #round1 .match { height: 40px; }
+
+  #round1 .m1 { top: 0; }
+  #round1 .m2 { top: 50px; }
+  #round1 .m3 { top: 100px; }
+  #round1 .m4 { top: 150px; }
+  #round1 .m5 { top: 200px; }
+  #round1 .m6 { top: 250px; }
+  #round1 .m7 { top: 300px; }
+  #round1 .m8 { top: 350px; }
+
 }
-
-#bracket #round1 .match { height: 40px; }
-
-#bracket #round1 .m1 { top: 0; }
-#bracket #round1 .m2 { top: 50px; }
-#bracket #round1 .m3 { top: 100px; }
-#bracket #round1 .m4 { top: 150px; }
-#bracket #round1 .m5 { top: 200px; }
-#bracket #round1 .m6 { top: 250px; }
-#bracket #round1 .m7 { top: 300px; }
-#bracket #round1 .m8 { top: 350px; }
 
 #bracket #round1 .region2 .m1, #bracket #round1 .region4 .m1 { top: 550px; }
 #bracket #round1 .region2 .m2, #bracket #round1 .region4 .m2 { top: 600px; }
@@ -160,8 +165,10 @@ table.gridtable {
   padding: 0 10px 0 6px;
 }
 
-#bracket #round6 .selected { font-size: 16px; background: #D7E8F0; }
-#bracket #round6 .slot1 { border-bottom: 1px solid #666; top: 22px; }
+#bracket #round6 .slot1 {
+  border-bottom: 1px solid $bracket;
+  top: 22px;
+}
 
 #bracket #round6 .slot2 { top: 48px; }
 
@@ -169,21 +176,20 @@ table.gridtable {
 #bracket #round6 strong span.seed,
 #bracket #round6 strong span.score { color: $champ; }
 
-#bracket h3, #bracket h4 { display: none; }
-
 #bracket #round1 h4 {
   display: block;
   position: absolute;
   left: 170px;
-  top: 165px;
+  top: 168px;
   width: 150px;
+  text-align: center;
 }
 
 #bracket #round1 .region3 h4,
 #bracket #round1 .region4 h4 {
   left: auto;
   right: 170px;
-  text-align: right;
+  text-align: center;
 }
 
 #bracket #round1 .region2 h4,
@@ -207,7 +213,7 @@ table.gridtable {
 }
 
 #bracket .match .seed {
-  color: lighten(#42454c, 5); font-size: 10px; }
+  color: lighten(#414141, 40); font-size: 10px; }
 
 #bracket .match .winner,
 #bracket .match .winner em { font-weight: bold; }
@@ -218,13 +224,9 @@ table.gridtable {
 #bracket .region3 .match,
 #bracket .region4 .match { border-right: 0px; }
 
-#bracket .final_pick { font-size: 16px; background: #fff; }
-
 #bracket .loser,
 #bracket strike {
   font-weight: normal;
   color: $loser;
   text-decoration: line-through;
 }
-
-#bracket strike a { color: #666; }
