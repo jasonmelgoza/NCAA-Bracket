@@ -1,8 +1,8 @@
-##NCAA Bracket
+## NCAA Bracket
 
 HTML + CSS + NCAA bracket = Geek sports
 
-###Rundown
+### Rundown
 
 A [Less](http://lesscss.org/ "http://lesscss.org/" ) file is used for style but is definitely not required. 
 
