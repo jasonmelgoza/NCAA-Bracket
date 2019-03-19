@@ -52,282 +52,282 @@ h4 {
   }
 }
 
-#bracket {
+.bracket-wrapper {
   margin-top: 15px;
   height: 1000px;
   position: relative;
 }
-#bracket .round {
+.bracket-wrapper .round {
   position: absolute;
   top: 0;
   width: 950px;
 }
-#bracket .round strong,
-#bracket .round strong span.seed,
-#bracket .round strong span.score {
+.bracket-wrapper .round strong,
+.bracket-wrapper .round strong span.seed,
+.bracket-wrapper .round strong span.score {
   color: $winner;
 }
-#bracket #round2 {
+.bracket-wrapper #round2 {
   left: 115px;
   width: 720px;
 }
-#bracket #round3 {
+.bracket-wrapper #round3 {
   left: 230px;
   width: 490px;
 }
-#bracket #round4 {
+.bracket-wrapper #round4 {
   left: 345px;
   width: 260px;
 }
-#bracket #round5 {
+.bracket-wrapper #round5 {
   left: 280px;
   width: 380px;
 }
-#bracket #round6 {
+.bracket-wrapper #round6 {
   left: 395px;
   width: 150px;
 }
-#bracket .round .region1 .match,
-#bracket .round .region2 .match {
+.bracket-wrapper .round .region1 .match,
+.bracket-wrapper .round .region2 .match {
   left: 0px;
 }
-#bracket .round .region3 .match,
-#bracket .round .region4 .match {
+.bracket-wrapper .round .region3 .match,
+.bracket-wrapper .round .region4 .match {
   right: 0px;
 }
-#bracket .match {
+.bracket-wrapper .match {
   border: 1px solid #3D4852;
   padding: 0;
   width: 114px;
   position: absolute;
   font-size: 12px;
 }
-#bracket #round1 .match {
+.bracket-wrapper #round1 .match {
   height: 40px;
 }
-#bracket #round1 .m1 {
+.bracket-wrapper #round1 .m1 {
   top: 0;
 }
-#bracket #round1 .m2 {
+.bracket-wrapper #round1 .m2 {
   top: 50px;
 }
-#bracket #round1 .m3 {
+.bracket-wrapper #round1 .m3 {
   top: 100px;
 }
-#bracket #round1 .m4 {
+.bracket-wrapper #round1 .m4 {
   top: 150px;
 }
-#bracket #round1 .m5 {
+.bracket-wrapper #round1 .m5 {
   top: 200px;
 }
-#bracket #round1 .m6 {
+.bracket-wrapper #round1 .m6 {
   top: 250px;
 }
-#bracket #round1 .m7 {
+.bracket-wrapper #round1 .m7 {
   top: 300px;
 }
-#bracket #round1 .m8 {
+.bracket-wrapper #round1 .m8 {
   top: 350px;
 }
-#bracket #round1 .region2 .m1,
-#bracket #round1 .region4 .m1 {
+.bracket-wrapper #round1 .region2 .m1,
+.bracket-wrapper #round1 .region4 .m1 {
   top: 550px;
 }
-#bracket #round1 .region2 .m2,
-#bracket #round1 .region4 .m2 {
+.bracket-wrapper #round1 .region2 .m2,
+.bracket-wrapper #round1 .region4 .m2 {
   top: 600px;
 }
-#bracket #round1 .region2 .m3,
-#bracket #round1 .region4 .m3 {
+.bracket-wrapper #round1 .region2 .m3,
+.bracket-wrapper #round1 .region4 .m3 {
   top: 650px;
 }
-#bracket #round1 .region2 .m4,
-#bracket #round1 .region4 .m4 {
+.bracket-wrapper #round1 .region2 .m4,
+.bracket-wrapper #round1 .region4 .m4 {
   top: 700px;
 }
-#bracket #round1 .region2 .m5,
-#bracket #round1 .region4 .m5 {
+.bracket-wrapper #round1 .region2 .m5,
+.bracket-wrapper #round1 .region4 .m5 {
   top: 750px;
 }
-#bracket #round1 .region2 .m6,
-#bracket #round1 .region4 .m6 {
+.bracket-wrapper #round1 .region2 .m6,
+.bracket-wrapper #round1 .region4 .m6 {
   top: 800px;
 }
-#bracket #round1 .region2 .m7,
-#bracket #round1 .region4 .m7 {
+.bracket-wrapper #round1 .region2 .m7,
+.bracket-wrapper #round1 .region4 .m7 {
   top: 850px;
 }
-#bracket #round1 .region2 .m8,
-#bracket #round1 .region4 .m8 {
+.bracket-wrapper #round1 .region2 .m8,
+.bracket-wrapper #round1 .region4 .m8 {
   top: 900px;
 }
-#bracket #round2 .match {
+.bracket-wrapper #round2 .match {
   height: 40px;
   margin-top: 24px;
 }
-#bracket #round2 .m1 {
+.bracket-wrapper #round2 .m1 {
   top: 0;
 }
-#bracket #round2 .m2 {
+.bracket-wrapper #round2 .m2 {
   top: 100px;
 }
-#bracket #round2 .m3 {
+.bracket-wrapper #round2 .m3 {
   top: 200px;
 }
-#bracket #round2 .m4 {
+.bracket-wrapper #round2 .m4 {
   top: 300px;
 }
-#bracket #round2 .region2 .m1,
-#bracket #round2 .region4 .m1 {
+.bracket-wrapper #round2 .region2 .m1,
+.bracket-wrapper #round2 .region4 .m1 {
   top: 550px;
 }
-#bracket #round2 .region2 .m2,
-#bracket #round2 .region4 .m2 {
+.bracket-wrapper #round2 .region2 .m2,
+.bracket-wrapper #round2 .region4 .m2 {
   top: 650px;
 }
-#bracket #round2 .region2 .m3,
-#bracket #round2 .region4 .m3 {
+.bracket-wrapper #round2 .region2 .m3,
+.bracket-wrapper #round2 .region4 .m3 {
   top: 750px;
 }
-#bracket #round2 .region2 .m4,
-#bracket #round2 .region4 .m4 {
+.bracket-wrapper #round2 .region2 .m4,
+.bracket-wrapper #round2 .region4 .m4 {
   top: 850px;
 }
-#bracket #round3 .match {
+.bracket-wrapper #round3 .match {
   height: 90px;
   margin-top: 50px;
 }
-#bracket #round3 .m1 {
+.bracket-wrapper #round3 .m1 {
   top: 0;
 }
-#bracket #round3 .m2 {
+.bracket-wrapper #round3 .m2 {
   top: 200px;
 }
-#bracket #round3 .region2 .m1,
-#bracket #round3 .region4 .m1 {
+.bracket-wrapper #round3 .region2 .m1,
+.bracket-wrapper #round3 .region4 .m1 {
   top: 550px;
 }
-#bracket #round3 .region2 .m2,
-#bracket #round3 .region4 .m2 {
+.bracket-wrapper #round3 .region2 .m2,
+.bracket-wrapper #round3 .region4 .m2 {
   top: 750px;
 }
-#bracket #round4 .match {
+.bracket-wrapper #round4 .match {
   height: 190px;
   margin-top: 100px;
 }
-#bracket #round4 .m1 {
+.bracket-wrapper #round4 .m1 {
   top: 0;
 }
-#bracket #round4 .region2 .m1,
-#bracket #round4 .region4 .m1 {
+.bracket-wrapper #round4 .region2 .m1,
+.bracket-wrapper #round4 .region4 .m1 {
   top: 550px;
 }
-#bracket #round5 .match {
+.bracket-wrapper #round5 .match {
   height: 90px;
   top: 425px;
 }
-#bracket #round5 .m1 {
+.bracket-wrapper #round5 .m1 {
   left: 0;
   border-left: none;
 }
-#bracket #round5 .m2 {
+.bracket-wrapper #round5 .m2 {
   right: 0;
   border-right: none;
 }
-#bracket #round6 .match {
+.bracket-wrapper #round6 .match {
   height: 90px;
   top: 425px;
   border: none;
   width: 150px;
   padding: 0;
 }
-#bracket #round6 .slot {
+.bracket-wrapper #round6 .slot {
   font-size: 13px;
   height: 25px;
   line-height: 25px;
   padding: 0 10px 0 6px;
 }
-#bracket #round6 .selected {
+.bracket-wrapper #round6 .selected {
   font-size: 16px;
   background: #d7e8f0;
 }
-#bracket #round6 .slot1 {
+.bracket-wrapper #round6 .slot1 {
   border-bottom: 1px solid #666;
   top: 22px;
 }
-#bracket #round6 .slot2 {
+.bracket-wrapper #round6 .slot2 {
   top: 48px;
 }
-#bracket #round6 strong,
-#bracket #round6 strong span.seed,
-#bracket #round6 strong span.score {
+.bracket-wrapper #round6 strong,
+.bracket-wrapper #round6 strong span.seed,
+.bracket-wrapper #round6 strong span.score {
   color: $champ;
 }
-#bracket h3,
-#bracket h4 {
+.bracket-wrapper h3,
+.bracket-wrapper h4 {
   display: none;
 }
-#bracket #round1 h4 {
+.bracket-wrapper #round1 h4 {
   display: block;
   position: absolute;
   left: 170px;
   top: 165px;
   width: 150px;
 }
-#bracket #round1 .region3 h4,
-#bracket #round1 .region4 h4 {
+.bracket-wrapper #round1 .region3 h4,
+.bracket-wrapper #round1 .region4 h4 {
   left: auto;
   right: 170px;
   text-align: right;
 }
-#bracket #round1 .region2 h4,
-#bracket #round1 .region4 h4 {
+.bracket-wrapper #round1 .region2 h4,
+.bracket-wrapper #round1 .region4 h4 {
   top: 715px;
 }
-#bracket .match .slot {
+.bracket-wrapper .match .slot {
   margin: 0;
   position: absolute;
   left: 0;
   right: 0;
   padding: 0 4px;
 }
-#bracket .match .slot1 {
+.bracket-wrapper .match .slot1 {
   top: 0px;
 }
-#bracket .match .slot2 {
+.bracket-wrapper .match .slot2 {
   bottom: 0px;
 }
-#bracket .match .score {
+.bracket-wrapper .match .score {
   position: absolute;
   right: 4px;
   font-style: normal;
 }
-#bracket .match .seed {
+.bracket-wrapper .match .seed {
   color: #8795A1;
   font-size: 10px;
 }
-#bracket .match .winner,
-#bracket .match .winner em {
+.bracket-wrapper .match .winner,
+.bracket-wrapper .match .winner em {
   font-weight: bold;
 }
-#bracket .region1 .match,
-#bracket .region2 .match {
+.bracket-wrapper .region1 .match,
+.bracket-wrapper .region2 .match {
   border-left: 0px;
 }
-#bracket .region3 .match,
-#bracket .region4 .match {
+.bracket-wrapper .region3 .match,
+.bracket-wrapper .region4 .match {
   border-right: 0px;
 }
-#bracket .final_pick {
+.bracket-wrapper .final_pick {
   font-size: 16px;
   background: #fff;
 }
-#bracket .loser,
-#bracket strike {
+.bracket-wrapper .loser,
+.bracket-wrapper strike {
   font-weight: normal;
   color: $loser;
   text-decoration: line-through;
 }
-#bracket strike a {
+.bracket-wrapper strike a {
   color: #666;
 }
